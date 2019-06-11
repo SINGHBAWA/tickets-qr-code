@@ -34,7 +34,7 @@ from django.conf.urls import url, include, re_path
 from django.urls import path
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
-from main.views import home
+from author.views import home
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -44,6 +44,7 @@ urlpatterns = [
     url(r'^logout/$', auth_views.LogoutView.as_view(template_name='registration/logout.html')),
     url(r'^home/$', home, name='home'),
     path('test/', include('main.urls')),
+    path('authors/', include('author.urls')),
     url(r'^admin/', admin.site.urls),
 ]
 urlpatterns +=  static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

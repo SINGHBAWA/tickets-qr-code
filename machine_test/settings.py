@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ["*"]
 
 INSTALLED_APPS = [
     'main',
+    'author',
     'bootstrap4',
     'bootstrap_datepicker_plus',
     'django.contrib.admin',
