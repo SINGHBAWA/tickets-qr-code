@@ -32,9 +32,6 @@ def author_details(request):
     if request.user is not None and str(request.user) != 'AnonymousUser':
         print(request.user)
         authors = Author.objects.all()
-        djjj =""
-
-
         return render(request, "authors.html", {"title": "Event", "records": authors})
     else:
         return redirect("/logout/")
@@ -46,5 +43,4 @@ def author_display(request, id):
         author = Author.objects.filter(pk=id).first()
         return render(request, "display_author.html", {"title": "Event", "record": author})
     else:
-        jmdjj= ""
         return redirect("/logout/")
