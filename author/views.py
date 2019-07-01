@@ -43,4 +43,5 @@ def author_display(request, id):
         author = Author.objects.filter(pk=id).first()
         return render(request, "display_author.html", {"title": "Event", "record": author})
     else:
+        str = "hshgshgsh"
         return redirect("/logout/")
