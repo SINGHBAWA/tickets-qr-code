@@ -1,4 +1,4 @@
-#Authorization
+# Authorization
 
 To use authorization we have to pass a value as a header.
 Here we can get auth_token while login and use that token to authorize again and again.
@@ -7,7 +7,7 @@ __Syntax__
 ```
 "Authorization": "Token auth_token"
 ```
-##Login
+## Login
 
 POST api/scanner/auth/login
 
@@ -122,9 +122,9 @@ __Response__
 
 
 
-#Events
+# Events
 
-##List of all upcoming events: (authorization required)
+## List of all upcoming events: (authorization required)
 
 ```
 GET api/scanner/events (requires authorization)
@@ -182,7 +182,7 @@ __Response__
 }
 ```
 
-##List of all upcoming events: (authorization required)
+## List of all upcoming events: (authorization required)
 
 ```
 GET api/scanner/events_upcoming (requires authorization)
@@ -243,7 +243,7 @@ __Response__
 
 
 
-##List of all upcoming events (authorization required)
+## List of all upcoming events (authorization required)
 
 ```
 GET api/scanner/events_past
@@ -302,7 +302,7 @@ __Response__
 
 
 
-##List of all ongoing events (authorization required)
+## List of all ongoing events (authorization required)
 ```
 GET api/scanner/events_ongoing
 ```
@@ -361,7 +361,7 @@ __Response__
 
 
 
-##To scan the ticket and marked as checked in (authorization required)
+## To scan the ticket and marked as checked in (authorization required)
 ```
 POST api/scanner/scan_ticket
 ```
@@ -418,7 +418,7 @@ __Response__
 
 
 
-##To scan the ticket and marked as checked in (authorization required)
+## To scan the ticket and marked as checked in (authorization required)
 
 ```
 POST api/scanner/ticket_details
@@ -474,7 +474,7 @@ __Response__
 
 
 
-##To scan the drinks QR code and get the purchased drinks (authorization required)
+## To scan the drinks QR code and get the purchased drinks (authorization required)
 POST api/scanner/scan_drinks
 
 
@@ -538,7 +538,7 @@ __Response__
 
 
 
-##List of all guest users (authorization required)
+## List of all guest users (authorization required)
 
 ```
 GET /api/scanner/event_guest?event_id=<event-id>
@@ -583,7 +583,7 @@ __Response__
 ```
 
 
-##Scanner scanned tokens for an event (Transaction History) (authorization required)
+## Scanner scanned tokens for an event (Transaction History) (authorization required)
 
 ```
 GET /api/scanner/scanner_transactions
@@ -635,7 +635,7 @@ __Response__
 }
 ```
 
-##User’s spent tokens for an event (Transaction History) (authorization required)
+## User’s spent tokens for an event (Transaction History) (authorization required)
 
 ```
 GET /api/scanner/user_transactions
